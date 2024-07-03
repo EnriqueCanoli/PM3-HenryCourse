@@ -1,0 +1,47 @@
+/* Profile.module.css */
+
+.card {
+    display: flex;
+    justify-content: space-between; /* Justify content horizontally */
+    align-items: center;
+    max-width: 700px;
+    height: 350px;
+    padding: 70px;
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 20px;
+    background-color: rgba(68, 118, 156, 0.581);
+    box-shadow: 0 0 20px 10px rgba(216, 210, 210, 0.25);
+    backdrop-filter: blur(15px);
+
+    /* Center the card vertically */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Update to flex-direction: column */
+    flex-direction: column;
+}
+
+.profileInfo {
+    /* New styles for aligning fields and values horizontally */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.field {
+    /* New styles for each field-value pair */
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Profile.module.css */
+
+.profileImage {
+    border-radius: 50%; /* Make the image circular */
+    max-width: 700%; /* Ensure the image takes up less space than the card */
+    max-height: 70%; /* Ensure the image takes up less space than the card */
+}
